@@ -27,7 +27,7 @@ from telegram.helpers import mention_html
 
 import Database.sql.kuki_sql as sql
 from Mikubot import function
-from Mikuot.plugins.log_channel import gloggable
+from Mikubot.plugins.log_channel import gloggable
 
 # <=======================================================================================================>
 
