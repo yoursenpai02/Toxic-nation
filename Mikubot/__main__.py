@@ -34,7 +34,7 @@ from telegram.ext import (
 from telegram.helpers import escape_markdown
 
 import Database.sql.users_sql as sql
-from Infamous.karma import *
+from Senpai.karma import *
 from Mikubot import (
     BOT_NAME,
     LOGGER,
