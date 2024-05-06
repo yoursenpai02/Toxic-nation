@@ -11,7 +11,7 @@ from telegram.ext import CommandHandler, ContextTypes
 from telegram.helpers import mention_html
 
 from Database.sql.approve_sql import is_approved
-from Infamous.karma import START_IMG
+from Senpai.karma import START_IMG
 from Mikubot import DEV_USERS, DRAGONS, INFOPIC, OWNER_ID, function
 from Mikubot.__main__ import STATS, USER_INFO
 from Mikubot.plugins.helper_funcs.chat_status import support_plus
