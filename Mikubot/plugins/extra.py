@@ -48,7 +48,7 @@ async def getid(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     # Sticker ID to be sent
     sticker_id = (
-        "CAACAgIAAx0CanzPTAABASPCZQdU9NbQIol5TW1GU2zV4KfjDMEAAnccAALIWZhJPyYLf3FzPHswBA"
+        "CAACAgQAAx0Ced73oAACCkRmObaOWFLab4ACq76DwyHR2XPxCwAChVQAAuOnXQWN2VeqUCF7DzUE"
     )
 
     # Send the sticker
