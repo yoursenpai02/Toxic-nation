@@ -803,8 +803,7 @@ def main():
     function(CommandHandler("settings", get_settings))
     function(CallbackQueryHandler(settings_button, pattern=r"stngs_"))
     function(CommandHandler("repo", repo))
-
-    function(CallbackQueryHandler(Miku_about_callback, pattern=r"Miku_") 
+    function(CallbackQueryHandler(Miku_about_callback, pattern=r"Miku_"))
     function(CallbackQueryHandler(stats_back, pattern=r"insider_"))
     function(CallbackQueryHandler(ai_handler_callback, pattern=r"ai_handler"))
     function(CallbackQueryHandler(more_ai_handler_callback, pattern=r"more_ai_handler"))
