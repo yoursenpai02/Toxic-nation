@@ -415,8 +415,8 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
     if query.data == "git_source":
         await query.answer()
         await query.message.edit_text(
-            "🎧 *Music help*:\n\n"
-            "All Commands:\n",
+            " *ʜᴇʀᴇ ɪꜱ ʜᴇʟᴘ ᴍᴇɴᴜ ꜰᴏʀ ᴍᴜꜱɪᴄ*\n\n",
+            
         
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
