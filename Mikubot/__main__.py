@@ -431,7 +431,7 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
             InlineKeyboardButton(" ➪", callback_data="more_ai_handler"),
             InlineKeyboardButton(" ➪", callback_data="more_ai_handler"),
         ],
-    ]
+    
 
 
                     [
