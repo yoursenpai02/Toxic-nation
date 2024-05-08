@@ -428,6 +428,56 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
                             "𝙈𝙊𝙍𝙀 𝙄𝙈𝘼𝙂𝙀 𝙂𝙀𝙉 ➪", callback_data="more_ai_handler"
                         ),
                     ],
+                                        [
+                        InlineKeyboardButton(
+                            "𝙈𝙊𝙍𝙀 𝙄𝙈𝘼𝙂𝙀 𝙂𝙀𝙉 ➪", callback_data="more_ai_handler"
+                        ),
+                    ],
+                                        [
+                        InlineKeyboardButton(
+                            "𝙈𝙊𝙍𝙀 𝙄𝙈𝘼𝙂𝙀 𝙂𝙀𝙉 ➪", callback_data="more_ai_handler"
+                        ),
+                    ],
+                                        [
+                        InlineKeyboardButton(
+                            "𝙈𝙊𝙍𝙀 𝙄𝙈𝘼𝙂𝙀 𝙂𝙀𝙉 ➪", callback_data="more_ai_handler"
+                        ),
+                    ],
+                                        [
+                        InlineKeyboardButton(
+                            "𝙈𝙊𝙍𝙀 𝙄𝙈𝘼𝙂𝙀 𝙂𝙀𝙉 ➪", callback_data="more_ai_handler"
+                        ),
+                    ],
+                                        [
+                        InlineKeyboardButton(
+                            "𝙈𝙊𝙍𝙀 𝙄𝙈𝘼𝙂𝙀 𝙂𝙀𝙉 ➪", callback_data="more_ai_handler"
+                        ),
+                    ],
+                                        [
+                        InlineKeyboardButton(
+                            "𝙈𝙊𝙍𝙀 𝙄𝙈𝘼𝙂𝙀 𝙂𝙀𝙉 ➪", callback_data="more_ai_handler"
+                        ),
+                    ],
+                                        [
+                        InlineKeyboardButton(
+                            "𝙈𝙊𝙍𝙀 𝙄𝙈𝘼𝙂𝙀 𝙂𝙀𝙉 ➪", callback_data="more_ai_handler"
+                        ),
+                    ],
+                                        [
+                        InlineKeyboardButton(
+                            "𝙈𝙊𝙍𝙀 𝙄𝙈𝘼𝙂𝙀 𝙂𝙀𝙉 ➪", callback_data="more_ai_handler"
+                        ),
+                    ],
+                                        [
+                        InlineKeyboardButton(
+                            "𝙈𝙊𝙍𝙀 𝙄𝙈𝘼𝙂𝙀 𝙂𝙀𝙉 ➪", callback_data="more_ai_handler"
+                        ),
+                    ],
+                                        [
+                        InlineKeyboardButton(
+                            "𝙈𝙊𝙍𝙀 𝙄𝙈𝘼𝙂𝙀 𝙂𝙀𝙉 ➪", callback_data="more_ai_handler"
+                        ),
+                    ],
                     [
                         InlineKeyboardButton("» 𝙃𝙊𝙈𝙀 «", callback_data="Miku_back"),
                     ],
