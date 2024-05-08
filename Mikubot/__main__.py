@@ -421,6 +421,7 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
             "➽ /palm <write prompt>: Performs a Palm search using a chatbot.\n\n"
             "➽ /upscale <reply to image>: Upscales your image quality.",
             parse_mode=ParseMode.MARKDOWN,
+            
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -456,6 +457,8 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
                         ),
                     ],
                 ],
+            ),
+            reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
@@ -481,6 +484,8 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
                         ),
                     ],
                 ],
+            ),
+            reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
