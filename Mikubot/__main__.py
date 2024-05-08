@@ -414,9 +414,10 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
     query = update.callback_query
     if query.data == "git_source":
         await query.answer()
-        await query.message.edit_caption(f"""
- ʜᴇʀᴇ ɪꜱ ʜᴇʟᴘ ᴍᴇɴᴜ ꜰᴏʀ ᴍᴜꜱɪᴄ 
-""",
+        await query.message.edit_text(
+            "🎧 *Music help*:\n\n"
+            "All Commands:\n",
+        
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
     [
