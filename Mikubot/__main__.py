@@ -410,9 +410,9 @@ PYROGRAM ➼ {PYROGRAM_VERSION}
         await query.answer(text=text, show_alert=True)
 
 
-async def ai_handler_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
-    if query.data == "ai_handler":
+    if query.data == "git_source":
         await query.answer()
         await query.message.edit_text(
             "🧠 *Artificial Intelligence Functions*:\n\n"
@@ -803,6 +803,7 @@ def main():
     function(CommandHandler("settings", get_settings))
     function(CallbackQueryHandler(settings_button, pattern=r"stngs_"))
     function(CommandHandler("repo", repo))
+    function(CallbackQueryHandler(gitsource_callback, pattern=r"git_source"))
     function(CallbackQueryHandler(Miku_about_callback, pattern=r"Miku_"))
     function(CallbackQueryHandler(stats_back, pattern=r"insider_"))
     function(CallbackQueryHandler(ai_handler_callback, pattern=r"ai_handler"))
