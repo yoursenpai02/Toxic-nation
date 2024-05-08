@@ -425,57 +425,58 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
                 [
                     [
                         InlineKeyboardButton(
-                            "𝙈𝙊𝙍𝙀 𝙄𝙈𝘼𝙂𝙀 𝙂𝙀𝙉 ➪", callback_data="more_ai_handler"
+                            " ➪", callback_data="more_ai_handler"
+                        ),
+                    
+                                        
+                        InlineKeyboardButton(
+                            " ➪", callback_data="more_ai_handler"
+                        ),
+                    
+                                        
+                        InlineKeyboardButton(
+                            " ➪", callback_data="more_ai_handler"
                         ),
                     ],
                                         [
                         InlineKeyboardButton(
-                            "𝙈𝙊𝙍𝙀 𝙄𝙈𝘼𝙂𝙀 𝙂𝙀𝙉 ➪", callback_data="more_ai_handler"
+                            " ➪", callback_data="more_ai_handler"
+                        ),
+                                       
+                                        
+                        InlineKeyboardButton(
+                            " ➪", callback_data="more_ai_handler"
+                        ),
+                                       
+                                        
+                        InlineKeyboardButton(
+                            " ➪", callback_data="more_ai_handler"
                         ),
                     ],
                                         [
                         InlineKeyboardButton(
-                            "𝙈𝙊𝙍𝙀 𝙄𝙈𝘼𝙂𝙀 𝙂𝙀𝙉 ➪", callback_data="more_ai_handler"
+                            " ➪", callback_data="more_ai_handler"
+                        ),
+                                       
+                        
+                        InlineKeyboardButton(
+                            " ➪", callback_data="more_ai_handler"
+                        ),
+                
+                ]
+                    [
+                        InlineKeyboardButton(
+                            " ➪", callback_data="more_ai_handler"
+                        ),
+                
+                                       
+                        InlineKeyboardButton(
+                            " ➪", callback_data="more_ai_handler"
                         ),
                     ],
                                         [
                         InlineKeyboardButton(
-                            "𝙈𝙊𝙍𝙀 𝙄𝙈𝘼𝙂𝙀 𝙂𝙀𝙉 ➪", callback_data="more_ai_handler"
-                        ),
-                    ],
-                                        [
-                        InlineKeyboardButton(
-                            "𝙈𝙊𝙍𝙀 𝙄𝙈𝘼𝙂𝙀 𝙂𝙀𝙉 ➪", callback_data="more_ai_handler"
-                        ),
-                    ],
-                                        [
-                        InlineKeyboardButton(
-                            "𝙈𝙊𝙍𝙀 𝙄𝙈𝘼𝙂𝙀 𝙂𝙀𝙉 ➪", callback_data="more_ai_handler"
-                        ),
-                    ],
-                                        [
-                        InlineKeyboardButton(
-                            "𝙈𝙊𝙍𝙀 𝙄𝙈𝘼𝙂𝙀 𝙂𝙀𝙉 ➪", callback_data="more_ai_handler"
-                        ),
-                    ],
-                                        [
-                        InlineKeyboardButton(
-                            "𝙈𝙊𝙍𝙀 𝙄𝙈𝘼𝙂𝙀 𝙂𝙀𝙉 ➪", callback_data="more_ai_handler"
-                        ),
-                    ],
-                                        [
-                        InlineKeyboardButton(
-                            "𝙈𝙊𝙍𝙀 𝙄𝙈𝘼𝙂𝙀 𝙂𝙀𝙉 ➪", callback_data="more_ai_handler"
-                        ),
-                    ],
-                                        [
-                        InlineKeyboardButton(
-                            "𝙈𝙊𝙍𝙀 𝙄𝙈𝘼𝙂𝙀 𝙂𝙀𝙉 ➪", callback_data="more_ai_handler"
-                        ),
-                    ],
-                                        [
-                        InlineKeyboardButton(
-                            "𝙈𝙊𝙍𝙀 𝙄𝙈𝘼𝙂𝙀 𝙂𝙀𝙉 ➪", callback_data="more_ai_handler"
+                            " ➪", callback_data="more_ai_handler"
                         ),
                     ],
                     [
