@@ -468,7 +468,7 @@ async def more_ai_handler_callback(update: Update, context: ContextTypes.DEFAULT
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="gitsource_callback"),
+                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="gitsource"),
                     ],
                 ],
             ),
