@@ -415,7 +415,7 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
     await query.answer()
 
     if query.data == "git_source":
-        source_link = "https://github.com/Infamous-Hydra/YaeMiko"
+        source_link = "hello"
         message_text = (
             f"*Here is the link for the public source repo*:\n\n{source_link}"
         )
