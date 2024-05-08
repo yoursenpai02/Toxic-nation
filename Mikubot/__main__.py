@@ -457,6 +457,16 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
                     ],
                 ],
             ),
+            async def ai_handler_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    if query.data == "ai_handler":
+        await query.answer()
+        await query.message.edit_text(
+            "🧠 *Artificial Intelligence Functions*:\n\n"
+            "All Commands:\n"
+            "➽ /askgpt <write query>: A chatbot using GPT for responding to user queries.\n\n"
+            "➽ /palm <write prompt>: Performs a Palm search using a chatbot.\n\n"
+            "➽ /upscale <reply to image>: Upscales your image quality.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -485,6 +495,16 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
                     ],
                 ],
             ),
+            async def ai_handler_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    if query.data == "ai_handler":
+        await query.answer()
+        await query.message.edit_text(
+            "🧠 *Artificial Intelligence Functions*:\n\n"
+            "All Commands:\n"
+            "➽ /askgpt <write query>: A chatbot using GPT for responding to user queries.\n\n"
+            "➽ /palm <write prompt>: Performs a Palm search using a chatbot.\n\n"
+            "➽ /upscale <reply to image>: Upscales your image quality.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
