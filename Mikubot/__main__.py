@@ -422,40 +422,18 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
             "➽ /upscale <reply to image>: Upscales your image quality.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
-    [
-        [
-            InlineKeyboardButton(" ➪", callback_data="more_ai_handler"),
-            InlineKeyboardButton(" ➪", callback_data="more_ai_handler"),
-        ],
-        [
-            InlineKeyboardButton(" ➪", callback_data="more_ai_handler"),
-            InlineKeyboardButton(" ➪", callback_data="more_ai_handler"),
-        ],
-    ]
-            )
-
-            
-               reply_markup=InlineKeyboardMarkup(
-    [
-        [
-            InlineKeyboardButton(" ➪", callback_data="more_ai_handler"),
-            InlineKeyboardButton(" ➪", callback_data="more_ai_handler"),
-        ],
-        [
-            InlineKeyboardButton(" ➪", callback_data="more_ai_handler"),
-            InlineKeyboardButton(" ➪", callback_data="more_ai_handler"),
-        ],
-    ]
-)
- 
-                 reply_markup=InlineKeyboardMarkup(   
                 [
+                    [
+                        InlineKeyboardButton(
+                            "𝙈𝙊𝙍𝙀 𝙄𝙈𝘼𝙂𝙀 𝙂𝙀𝙉 ➪", callback_data="more_ai_handler"
+                        ),
+                    ],
                     [
                         InlineKeyboardButton("» 𝙃𝙊𝙈𝙀 «", callback_data="Miku_back"),
                     ],
                 ],
             ),
-        
+        )
 
 
 async def more_ai_handler_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
