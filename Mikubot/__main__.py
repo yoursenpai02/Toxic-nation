@@ -424,12 +424,12 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
             reply_markup=InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(" ➪", callback_data="more_ai_handler"),
-            InlineKeyboardButton(" ➪", callback_data="more_ai_handler"),
+            InlineKeyboardButton(" admin ", callback_data="music_admin"),
+            InlineKeyboardButton(" play ", callback_data="music_play"),
         ],
         [
-            InlineKeyboardButton(" ➪", callback_data="more_ai_handler"),
-            InlineKeyboardButton(" ➪", callback_data="more_ai_handler"),
+            InlineKeyboardButton(" bot ", callback_data="music_bot"),
+            InlineKeyboardButton(" extra ", callback_data="music_extra"),
         ],
     
 
@@ -442,13 +442,110 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
         )
 
 
-async def more_ai_handler_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def music_admin_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
-    if query.data == "more_ai_handler":
+    if query.data == "music_admin":
         await query.answer()
         await query.message.edit_text(
             "*Here's more image gen-related commands*:\n\n"
-            "Command: /meinamix\n"
+            
+            "Command: admin /meinamix\n"
+            "  • Description: Generates an image using the meinamix model.\n\n"
+            "Command: /darksushi\n"
+            "  • Description: Generates an image using the darksushi model.\n\n"
+            "Command: /meinahentai\n"
+            "  • Description: Generates an image using the meinahentai model.\n\n"
+            "Command: /darksushimix\n"
+            "  • Description: Generates an image using the darksushimix model.\n\n"
+            "Command: /anylora\n"
+            "  • Description: Generates an image using the anylora model.\n\n"
+            "Command: /cetsumix\n"
+            "  • Description: Generates an image using the cetus-mix model.\n\n"
+            "Command: /darkv2\n"
+            "  • Description: Generates an image using the darkv2 model.\n\n"
+            "Command: /creative\n"
+            "  • Description: Generates an image using the creative model.",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="git_source"),
+                    ],
+                ],
+            ),
+        )
+
+async def music_play_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    if query.data == "music_play":
+        await query.answer()
+        await query.message.edit_text(
+            "*Here's more image gen-related commands*:\n\n"
+            "Command: play /meinamix\n"
+            "  • Description: Generates an image using the meinamix model.\n\n"
+            "Command: /darksushi\n"
+            "  • Description: Generates an image using the darksushi model.\n\n"
+            "Command: /meinahentai\n"
+            "  • Description: Generates an image using the meinahentai model.\n\n"
+            "Command: /darksushimix\n"
+            "  • Description: Generates an image using the darksushimix model.\n\n"
+            "Command: /anylora\n"
+            "  • Description: Generates an image using the anylora model.\n\n"
+            "Command: /cetsumix\n"
+            "  • Description: Generates an image using the cetus-mix model.\n\n"
+            "Command: /darkv2\n"
+            "  • Description: Generates an image using the darkv2 model.\n\n"
+            "Command: /creative\n"
+            "  • Description: Generates an image using the creative model.",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="git_source"),
+                    ],
+                ],
+            ),
+        )
+
+async def music_bot_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    if query.data == "music_bot":
+        await query.answer()
+        await query.message.edit_text(
+            "*Here's more image gen-related commands*:\n\n"
+            "Command: bot /meinamix\n"
+            "  • Description: Generates an image using the meinamix model.\n\n"
+            "Command: /darksushi\n"
+            "  • Description: Generates an image using the darksushi model.\n\n"
+            "Command: /meinahentai\n"
+            "  • Description: Generates an image using the meinahentai model.\n\n"
+            "Command: /darksushimix\n"
+            "  • Description: Generates an image using the darksushimix model.\n\n"
+            "Command: /anylora\n"
+            "  • Description: Generates an image using the anylora model.\n\n"
+            "Command: /cetsumix\n"
+            "  • Description: Generates an image using the cetus-mix model.\n\n"
+            "Command: /darkv2\n"
+            "  • Description: Generates an image using the darkv2 model.\n\n"
+            "Command: /creative\n"
+            "  • Description: Generates an image using the creative model.",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="git_source"),
+                    ],
+                ],
+            ),
+        )
+
+async def music_extra_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    if query.data == "music_extra":
+        await query.answer()
+        await query.message.edit_text(
+            "*Here's more image gen-related commands*:\n\n"
+            "Command: extra /meinamix\n"
             "  • Description: Generates an image using the meinamix model.\n\n"
             "Command: /darksushi\n"
             "  • Description: Generates an image using the darksushi model.\n\n"
@@ -811,6 +908,10 @@ def main():
     function(CommandHandler("repo", repo))
     function(CallbackQueryHandler(gitsource_callback, pattern=r"git_source"))
     function(CallbackQueryHandler(Miku_about_callback, pattern=r"Miku_"))
+    function(CallbackQueryHandler(music_admin_callback, pattern=r"music_admin"))
+    function(CallbackQueryHandler(music_play_callback, pattern=r"music_play"))
+    function(CallbackQueryHandler(music_bot_callback, pattern=r"music_bot"))
+    function(CallbackQueryHandler(music_extra_callback, pattern=r"music_extra"))
     function(CallbackQueryHandler(stats_back, pattern=r"insider_"))
     function(CallbackQueryHandler(ai_handler_callback, pattern=r"ai_handler"))
     function(CallbackQueryHandler(more_ai_handler_callback, pattern=r"more_ai_handler"))
