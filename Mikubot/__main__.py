@@ -457,7 +457,7 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
                     ],
                 ],
             ),
-            async def ai_handler_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def ai_handler_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
     if query.data == "ai_handler":
         await query.answer()
@@ -495,7 +495,7 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
                     ],
                 ],
             ),
-            async def ai_handler_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def ai_handler_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
     if query.data == "ai_handler":
         await query.answer()
