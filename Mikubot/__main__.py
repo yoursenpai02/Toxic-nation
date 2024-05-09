@@ -446,16 +446,6 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
             InlineKeyboardButton(" play ", callback_data="music_play"),
             InlineKeyboardButton(" play ", callback_data="music_play"),
         ],
-        [
-            InlineKeyboardButton(" bot ", callback_data="music_bot"),
-            InlineKeyboardButton(" extra ", callback_data="music_extra"),
-            InlineKeyboardButton(" play ", callback_data="music_play"),
-        ],
-        [
-            InlineKeyboardButton(" admin ", callback_data="music_admin"),
-            InlineKeyboardButton(" play ", callback_data="music_play"),
-            InlineKeyboardButton(" play ", callback_data="music_play"),
-        ],
                     [
                         InlineKeyboardButton("» 𝙃𝙊𝙈𝙀 «", callback_data="Miku_back"),
                     ],
