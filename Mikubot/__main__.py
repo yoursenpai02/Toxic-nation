@@ -477,23 +477,13 @@ async def music_play_callback(update: Update, context: ContextTypes.DEFAULT_TYPE
     if query.data == "music_play":
         await query.answer()
         await query.message.edit_text(
-            "*Here's more image gen-related commands*:\n\n"
-            "Command: /meinamix\n"
-            "  • Description: Generates an image using the meinamix model.\n\n"
-            "Command: /darksushi\n"
-            "  • Description: Generates an image using the darksushi model.\n\n"
-            "Command: /meinahentai\n"
-            "  • Description: Generates an image using the meinahentai model.\n\n"
-            "Command: /darksushimix\n"
-            "  • Description: Generates an image using the darksushimix model.\n\n"
-            "Command: /anylora\n"
-            "  • Description: Generates an image using the anylora model.\n\n"
-            "Command: /cetsumix\n"
-            "  • Description: Generates an image using the cetus-mix model.\n\n"
-            "Command: /darkv2\n"
-            "  • Description: Generates an image using the darkv2 model.\n\n"
-            "Command: /creative\n"
-            "  • Description: Generates an image using the creative model.",
+            "*Here's Play commands*:\n\n"
+            "Command: /play or /vplay or /cplay\n"
+            "  • Description: Bot will start playing your given query on voice chat or stream live links on voice chat.\n\n"
+            "Command: /playforce or /vplayforce or /cplayforce\n"
+            "  • Description: Force play stop the current playing track on voice chat and start playing the searched track instantly without disturbing/clearing queue.\n\n"
+            "Command: /channelplay\n"
+            "  • Description: chat username or id or disable - connect channel to a group and stream music on channel voice chat from your group.\n\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -509,23 +499,19 @@ async def music_bot_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
     if query.data == "music_bot":
         await query.answer()
         await query.message.edit_text(
-            "*Here's more image gen-related commands*:\n\n"
-            "Command: /meinamix\n"
-            "  • Description: Generates an image using the meinamix model.\n\n"
-            "Command: /darksushi\n"
-            "  • Description: Generates an image using the darksushi model.\n\n"
-            "Command: /meinahentai\n"
-            "  • Description: Generates an image using the meinahentai model.\n\n"
-            "Command: /darksushimix\n"
-            "  • Description: Generates an image using the darksushimix model.\n\n"
-            "Command: /anylora\n"
-            "  • Description: Generates an image using the anylora model.\n\n"
-            "Command: /cetsumix\n"
-            "  • Description: Generates an image using the cetus-mix model.\n\n"
-            "Command: /darkv2\n"
-            "  • Description: Generates an image using the darkv2 model.\n\n"
-            "Command: /creative\n"
-            "  • Description: Generates an image using the creative model.",
+            "*Here's Bot commands*:\n\n"
+            "Command: /stats\n"
+            "  • Description: Get top 10 tracks global stats, top 10 users of bot, top 10 chats on bot, top 10 played in a chat etc.\n\n"
+            "Command: /sudolist\n"
+            "  • Description: Check the sudo users of this bot.\n\n"
+            "Command: /lyrics\n"
+            "  • Description: search lyrics for the particular music on web.\n\n"
+            "Command: /song\n"
+            "  • Description: Download any track from YouTube in mp3 or mp4 formats.\n\n"
+            "Command: /player\n"
+            "  • Description: Get interactive playing panel.\n\n"
+            "Command: /queue or /cqueue\n"
+            "  • Description: Check the queue list of music.\n\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -541,23 +527,13 @@ async def music_extra_callback(update: Update, context: ContextTypes.DEFAULT_TYP
     if query.data == "music_extra":
         await query.answer()
         await query.message.edit_text(
-            "*Here's more image gen-related commands*:\n\n"
-            "Command: /meinamix\n"
-            "  • Description: Generates an image using the meinamix model.\n\n"
-            "Command: /darksushi\n"
-            "  • Description: Generates an image using the darksushi model.\n\n"
+            "*Here's Extra commands*:\n\n"
+            "Command: /mstart\n"
+            "  • Description: start the music bot.\n\n"
+            "Command: /mhelp\n"
+            "  • Description: Get commands helper menu with detailed explanation of commands.\n\n"
             "Command: /meinahentai\n"
-            "  • Description: Generates an image using the meinahentai model.\n\n"
-            "Command: /darksushimix\n"
-            "  • Description: Generates an image using the darksushimix model.\n\n"
-            "Command: /anylora\n"
-            "  • Description: Generates an image using the anylora model.\n\n"
-            "Command: /cetsumix\n"
-            "  • Description: Generates an image using the cetus-mix model.\n\n"
-            "Command: /darkv2\n"
-            "  • Description: Generates an image using the darkv2 model.\n\n"
-            "Command: /creative\n"
-            "  • Description: Generates an image using the creative model.",
+            "  • Description: Ping the bot and check RAM, CPU etc stats of bot.\n\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
