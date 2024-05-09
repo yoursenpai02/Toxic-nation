@@ -445,23 +445,23 @@ async def music_admin_callback(update: Update, context: ContextTypes.DEFAULT_TYP
     if query.data == "music_admin":
         await query.answer()
         await query.message.edit_text(
-            "*Here's more image gen-related commands*:\n\n"
-            "Command: /meinamix\n"
-            "  • Description: Generates an image using the meinamix model.\n\n"
-            "Command: /darksushi\n"
-            "  • Description: Generates an image using the darksushi model.\n\n"
-            "Command: /meinahentai\n"
-            "  • Description: Generates an image using the meinahentai model.\n\n"
-            "Command: /darksushimix\n"
-            "  • Description: Generates an image using the darksushimix model.\n\n"
-            "Command: /anylora\n"
-            "  • Description: Generates an image using the anylora model.\n\n"
-            "Command: /cetsumix\n"
-            "  • Description: Generates an image using the cetus-mix model.\n\n"
-            "Command: /darkv2\n"
-            "  • Description: Generates an image using the darkv2 model.\n\n"
-            "Command: /creative\n"
-            "  • Description: Generates an image using the creative model.",
+            "*Here's ADMIN related commands*:\n\n"
+            "  • just add C in the starting of the commands to use them for channel.\n\n"
+            "Command: /pause\n"
+            "  • Description: Pause the current playing stream.\n\n"
+            "Command: /resume\n"
+            "  • Description: Resume the pause stream.\n\n"
+            "Command: /skip\n"
+            "  • Description: Skip the current playing stream\n"
+            " and start streaming the next track in the\n"
+            " queue.\n\n"
+            "Command: /end or /stop\n"
+            "  • Description: Clear the queue and end\n"
+            " the current playing stream.\n\n"
+            "Command: /player\n"
+            "  • Description: Get a interactive player panel.\n\n"
+            "Command: /queue\n"
+            "  • Description: Show the queued track list.\n\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
