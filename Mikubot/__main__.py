@@ -423,28 +423,28 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
     [
         [
             InlineKeyboardButton(" admin ", callback_data="music_admin"),
-            InlineKeyboardButton(" play ", callback_data="music_play"),
-            InlineKeyboardButton(" play ", callback_data="music_play"),
+            InlineKeyboardButton(" auth ", callback_data="music_play"),
+            InlineKeyboardButton(" broadcast ", callback_data="music_play"),
         ],
         [
-            InlineKeyboardButton(" bot ", callback_data="music_bot"),
-            InlineKeyboardButton(" extra ", callback_data="music_extra"),
-            InlineKeyboardButton(" play ", callback_data="music_play"),
+            InlineKeyboardButton(" Bl-chat ", callback_data="music_bot"),
+            InlineKeyboardButton(" Bl-user ", callback_data="music_extra"),
+            InlineKeyboardButton(" cplay ", callback_data="music_play"),
         ],
         [
-            InlineKeyboardButton(" admin ", callback_data="music_admin"),
-            InlineKeyboardButton(" play ", callback_data="music_play"),
-            InlineKeyboardButton(" play ", callback_data="music_play"),
+            InlineKeyboardButton(" gban ", callback_data="music_admin"),
+            InlineKeyboardButton(" loop ", callback_data="music_play"),
+            InlineKeyboardButton(" maintenance ", callback_data="music_play"),
         ],
         [
-            InlineKeyboardButton(" bot ", callback_data="music_bot"),
-            InlineKeyboardButton(" extra ", callback_data="music_extra"),
-            InlineKeyboardButton(" play ", callback_data="music_play"),
+            InlineKeyboardButton(" ping ", callback_data="music_bot"),
+            InlineKeyboardButton(" play ", callback_data="music_extra"),
+            InlineKeyboardButton(" shuffle ", callback_data="music_play"),
         ],
         [
-            InlineKeyboardButton(" admin ", callback_data="music_admin"),
-            InlineKeyboardButton(" play ", callback_data="music_play"),
-            InlineKeyboardButton(" play ", callback_data="music_play"),
+            InlineKeyboardButton(" seek ", callback_data="music_admin"),
+            InlineKeyboardButton(" song ", callback_data="music_play"),
+            InlineKeyboardButton(" speed ", callback_data="music_play"),
         ],
                     [
                         InlineKeyboardButton("» 𝙃𝙊𝙈𝙀 «", callback_data="Miku_back"),
