@@ -532,7 +532,7 @@ async def music_extra_callback(update: Update, context: ContextTypes.DEFAULT_TYP
             "  • Description: start the music bot.\n\n"
             "Command: /mhelp\n"
             "  • Description: Get commands helper menu with detailed explanation of commands.\n\n"
-            "Command: /meinahentai\n"
+            "Command: /ping\n"
             "  • Description: Ping the bot and check RAM, CPU etc stats of bot.\n\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
