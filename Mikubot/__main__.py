@@ -682,7 +682,7 @@ async def music_ping_callback(update: Update, context: ContextTypes.DEFAULT_TYPE
             "Command: /mstart\n"
             "  • Description: Starts the music bot.\n\n"
             "Command: /mhelp\n"
-            "  "  • Description: Get help menu with explanation of commands.\n\n"
+            "  • Description: Get help menu with explanation of commands.\n\n"
             "Command: /ping\n"
             "  • Description: show the ping and system stats of the bot.\n\n"
             "Command: /stats\n"
