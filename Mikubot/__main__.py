@@ -423,28 +423,28 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
     [
         [
             InlineKeyboardButton(" admin ", callback_data="music_admin"),
-            InlineKeyboardButton(" auth ", callback_data="music_play"),
-            InlineKeyboardButton(" broadcast ", callback_data="music_play"),
+            InlineKeyboardButton(" auth ", callback_data="music_auth"),
+            InlineKeyboardButton(" broadcast ", callback_data="music_broadcast"),
         ],
         [
-            InlineKeyboardButton(" Bl-chat ", callback_data="music_bot"),
-            InlineKeyboardButton(" Bl-user ", callback_data="music_extra"),
-            InlineKeyboardButton(" cplay ", callback_data="music_play"),
+            InlineKeyboardButton(" Bl-chat ", callback_data="music_blchat"),
+            InlineKeyboardButton(" Bl-user ", callback_data="music_bluser"),
+            InlineKeyboardButton(" cplay ", callback_data="music_cplay"),
         ],
         [
-            InlineKeyboardButton(" gban ", callback_data="music_admin"),
-            InlineKeyboardButton(" loop ", callback_data="music_play"),
-            InlineKeyboardButton(" maintenance ", callback_data="music_play"),
+            InlineKeyboardButton(" gban ", callback_data="music_gban"),
+            InlineKeyboardButton(" loop ", callback_data="music_loop"),
+            InlineKeyboardButton(" maintenance ", callback_data="music_maintenance"),
         ],
         [
-            InlineKeyboardButton(" ping ", callback_data="music_bot"),
-            InlineKeyboardButton(" play ", callback_data="music_extra"),
-            InlineKeyboardButton(" shuffle ", callback_data="music_play"),
+            InlineKeyboardButton(" ping ", callback_data="music_ping"),
+            InlineKeyboardButton(" play ", callback_data="music_play"),
+            InlineKeyboardButton(" shuffle ", callback_data="music_shuffle"),
         ],
         [
-            InlineKeyboardButton(" seek ", callback_data="music_admin"),
-            InlineKeyboardButton(" song ", callback_data="music_play"),
-            InlineKeyboardButton(" speed ", callback_data="music_play"),
+            InlineKeyboardButton(" seek ", callback_data="music_seek"),
+            InlineKeyboardButton(" song ", callback_data="music_song"),
+            InlineKeyboardButton(" speed ", callback_data="music_speed"),
         ],
                     [
                         InlineKeyboardButton("» 𝙃𝙊𝙈𝙀 «", callback_data="Miku_back"),
@@ -508,24 +508,26 @@ async def music_play_callback(update: Update, context: ContextTypes.DEFAULT_TYPE
             ),
         )
 
-async def music_bot_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def music_broadcast_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
-    if query.data == "music_bot":
+    if query.data == "music_broadcast":
         await query.answer()
         await query.message.edit_text(
-            "*Here's Bot commands*:\n\n"
-            "Command: /stats\n"
-            "  • Description: Get top 10 tracks global stats, top 10 users of bot, top 10 chats on bot, top 10 played in a chat etc.\n\n"
-            "Command: /sudolist\n"
-            "  • Description: Check the sudo users of this bot.\n\n"
-            "Command: /lyrics\n"
-            "  • Description: search lyrics for the particular music on web.\n\n"
-            "Command: /song\n"
-            "  • Description: Download any track from YouTube in mp3 or mp4 formats.\n\n"
-            "Command: /player\n"
-            "  • Description: Get interactive playing panel.\n\n"
-            "Command: /queue or /cqueue\n"
-            "  • Description: Check the queue list of music.\n\n",
+            "*Here's BROADCAST FEATURES [only for sudoers]*:\n\n"
+            "Command: /broadcast\n"
+            "  • Description: Broadcast a message to served chats of the bot.\n\n"
+            "Broadcasting modes\n"
+            "Command: -pin\n"
+            "  • Description: Pin your broadcasted messages in served chats.\n\n"
+            "Command: -pinloud\n"
+            "  • Description: Pin your broadcasted messages in served chats and send notification to the members.\n\n"
+            "Command: -user\n"
+            "  • Description: Broadcast the message to the users who have started your bot.\n\n"
+            "Command: -assistant\n"
+            "  • Description: Broadcast your message from assistant account of the bot.\n\n"
+            "Command: -nobot\n"
+            "  • Description: Forces the bot to not broadcast the message.\n\n"
+            "EXAMPLE: /broadcast -user -assistant -pin testing broadcast.\n\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -536,28 +538,266 @@ async def music_bot_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
             ),
         )
 
-async def music_extra_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def music_blchat_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
-    if query.data == "music_extra":
+    if query.data == "music_blchat":
         await query.answer()
         await query.message.edit_text(
-            "*Here's Extra commands*:\n\n"
+            "*Here's CHAT BLACKLIST FEATURES: [only for sedoers]*:\n\n"
+            "Restrict shit chats to use our precious bot.\n\n"
+            "Command: /blacklistchat\n"
+            "  • Description: Blacklist a chat from using the bot.\n\n"
+            "Command: /whitelistchat\n"
+            "  • Description: Whitelist a chat from using the bot.\n\n"
+            "Command: /blacklistedchat\n"
+            "  • Description: show to list of blacklisted chats.\n\n",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="git_source"),
+                    ],
+                ],
+            ),
+        )
+async def music_bluser_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    if query.data == "music_bluser":
+        await query.answer()
+        await query.message.edit_text(
+            "*Here's BLOCK USERS [only for sudoers]*:\n\n"
+            "Starts ignoring the blacklisted user, so that he/she can't use the bot commands.\n\n"
+            "Command: /block\n"
+            "  • Description: Block the user from our bot.\n\n"
+            "Command: /unblock\n"
+            "  • Description: unblocks the blocked user.\n\n"
+            "Command: /blockedusers\n"
+            "  • Description: Show the list of blocked users.\n\n",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="ai_handler"),
+                    ],
+                ],
+            ),
+        )
+
+async def music_cplay_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    if query.data == "music_cplay":
+        await query.answer()
+        await query.message.edit_text(
+            "*Here's CHANNEL PLAY commands*:\n\n"
+            "You can stream audio/video in channel.\n\n"
+            "Command: /cplay\n"
+            "  • Description: Starts streaming the requested audio track on the channel's videochat.\n\n"
+            "Command: /cvplay\n"
+            "  • Description: Starts streaming the requested vudeo track on the channel's videochat.\n\n"
+            "Command: /cplayforce or /cvplayforce\n"
+            "  • Description: Stops the ongoing stream and starts streaming the requested track.\n\n"
+            "Command: /channelplay\n"
+            "  • Description: connect channel to a group and start ls streaming tracks by the help of commands sent in group. \n\n",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="ai_handler"),
+                    ],
+                ],
+            ),
+        )
+
+async def music_gban_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    if query.data == "music_gban":
+        await query.answer()
+        await query.message.edit_text(
+            "*Here's GLOBAL BAN FEATURES [only for sudoers]*:\n\n"
+            "Command: /gban\n"
+            "  • Description: Globally bans the chutiya from all the served chats and blacklist him from using the bot.\n\n"
+            "Command: /ungban\n"
+            "  • Description: Globally unban the globally banned user.\n\n"
+            "Command: /gbannedusers\n"
+            "  • Description: Show the list of globally banned users.\n\n",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="ai_handler"),
+                    ],
+                ],
+            ),
+        )
+
+async def music_loop_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    if query.data == "music_loop":
+        await query.answer()
+        await query.message.edit_text(
+            "*Here's LOOP STREAM commands*:\n\n"
+            "Starts streaming the ongoing stream in loop.\n\n"
+            "Command: /loop\n"
+            "  • Description: Enables/disables loop for ongoing stream.\n\n"
+            "Command: /loop\n"
+            "  • Description: Enables the loop for the guven value.\n\n",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="ai_handler"),
+                    ],
+                ],
+            ),
+        )
+
+async def music_maintenance_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    if query.data == "music_maintenance":
+        await query.answer()
+        await query.message.edit_text(
+            "*Here's MAINTENANCE MODE [only for sudoers]*:\n\n"
+            "Command: /logs\n"
+            "  • Description: Get logs of the bot.\n\n"
+            "Command: /logger\n"
+            "  • Description: Bot will start logging the activities happen on bot.\n\n"
+            "Command: /maintenance\n"
+            "  • Description: Enable or disable the maintenance mode of your bot.\n\n",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="ai_handler"),
+                    ],
+                ],
+            ),
+        )
+
+async def music_ping_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    if query.data == "music_ping":
+        await query.answer()
+        await query.message.edit_text(
+            "*Here's PING & STATS commands*:\n\n"
             "Command: /mstart\n"
-            "  • Description: start the music bot.\n\n"
+            "  • Description: Starts the music bot.\n\n"
             "Command: /mhelp\n"
-            "  • Description: Get commands helper menu with detailed explanation of commands.\n\n"
+            "  "  • Description: Get help menu with explanation of commands.\n\n"
             "Command: /ping\n"
-            "  • Description: Ping the bot and check RAM, CPU etc stats of bot.\n\n",
+            "  • Description: show the ping and system stats of the bot.\n\n"
+            "Command: /stats\n"
+            "  • Description: Showa the overall stats of the bot.\n\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="git_source"),
+                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="ai_handler"),
                     ],
                 ],
             ),
         )
 
+async def music_auth_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    if query.data == "music_auth":
+        await query.answer()
+        await query.message.edit_text(
+            "*Here's AUTH USERS commands*:\n\n"
+            "*Auth users can use admin rights in the bot without admin rights in the chat.*:\n"
+            "Command: /auth\n"
+            "  • Description: Add user to auth list of the bot.\n\n"
+            "Command: /unauth\n"
+            "  • Description: Remove auth users from the auth users list.\n\n"
+            "Command: /authusers\n"
+            "  • Description: Show the list of auth users of the group.\n\n",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="ai_handler"),
+                    ],
+                ],
+            ),
+        )
+
+async def music_shuffle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    if query.data == "music_shuffle":
+        await query.answer()
+        await query.message.edit_text(
+            "*Here's SHUFFLE QUEUE commands*:\n\n"
+            "Command: /shuffle\n"
+            "  • Description: Shuffle's the queue.\n\n"
+            "Command: /queue\n"
+            "  • Description: Shows the shuffled queue.\n\n",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="ai_handler"),
+                    ],
+                ],
+            ),
+        )
+
+async def music_seek_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    if query.data == "music_seek":
+        await query.answer()
+        await query.message.edit_text(
+            "*Here's SEEK STREAM commands*:\n\n"
+            "Command: /seek\n"
+            "  • Description: seek the stream to the given duration.\n\n"
+            "Command: /seekback\n"
+            "  • Description: backward seek the stream to the guven duration.\n\n",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="ai_handler"),
+                    ],
+                ],
+            ),
+        )
+
+async def music_song_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    if query.data == "music_song":
+        await query.answer()
+        await query.message.edit_text(
+            "*Here's SONG DOWNLOAD  commands*:\n\n"
+            "Command: /song\n"
+            "  • Description: Download any track from YouTube in mp3 or mp4 formats.\n\n",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="ai_handler"),
+                    ],
+                ],
+            ),
+        )
+
+async def music_speed_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    if query.data == "music_speed":
+        await query.answer()
+        await query.message.edit_text(
+            "*Here's SPEED commands*:\n\n"
+            "You can control the playback speed of the ongoing stream.[admins only]\n\n"
+            "Command: /speed or /playback\n"
+            "  • Description: Gor adjusting the audio playback speed in group.\n\n"
+            "Command: /cspeed or /cplayback\n"
+            "  • Description: For adjusting the audio playback speed in channel.\n\n",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="ai_handler"),
+                    ],
+                ],
+            ),
+        )
 
 async def repo(update: Update, context: ContextTypes.DEFAULT_TYPE):
     source_link = "hello"
@@ -896,10 +1136,21 @@ def main():
     function(CallbackQueryHandler(gitsource_callback, pattern=r"git_source"))
     function(CallbackQueryHandler(Miku_about_callback, pattern=r"Miku_"))
     function(CallbackQueryHandler(music_admin_callback, pattern=r"music_admin"))
-    function(CallbackQueryHandler(music_play_callback, pattern=r"music_play"))
-    function(CallbackQueryHandler(music_bot_callback, pattern=r"music_bot"))
-    function(CallbackQueryHandler(music_extra_callback, pattern=r"music_extra"))
+    function(CallbackQueryHandler(music_auth_callback, pattern=r"music_auth"))
+    function(CallbackQueryHandler(music_broadcast_callback, pattern=r"music_broadcast"))
+    function(CallbackQueryHandler(music_blchat_callback, pattern=r"music_blchat"))
     function(CallbackQueryHandler(stats_back, pattern=r"insider_"))
+    function(CallbackQueryHandler(music_bluser_callback, pattern=r"music_bluser"))
+    function(CallbackQueryHandler(music_cplay_callback, pattern=r"music_cplay"))
+    function(CallbackQueryHandler(music_gban_callback, pattern=r"music_gban"))
+    function(CallbackQueryHandler(music_loop_callback, pattern=r"music_loop"))
+    function(CallbackQueryHandler(music_maintenance_callback, pattern=r"music_maintenance"))
+    function(CallbackQueryHandler(music_ping_callback, pattern=r"music_ping"))
+    function(CallbackQueryHandler(music_play_callback, pattern=r"music_play"))
+    function(CallbackQueryHandler(music_shuffle_callback, pattern=r"music_shuffle"))
+    function(CallbackQueryHandler(music_seek_callback, pattern=r"music_seek"))
+    function(CallbackQueryHandler(music_song_callback, pattern=r"music_song"))
+    function(CallbackQueryHandler(music_speed_callback, pattern=r"music_speed"))
     function(CallbackQueryHandler(ai_handler_callback, pattern=r"ai_handler"))
     function(CallbackQueryHandler(more_ai_handler_callback, pattern=r"more_ai_handler"))
     function(MessageHandler(filters.StatusUpdate.MIGRATE, migrate_chats))
