@@ -577,7 +577,7 @@ async def music_bluser_callback(update: Update, context: ContextTypes.DEFAULT_TY
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="ai_handler"),
+                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="git_source"),
                     ],
                 ],
             ),
@@ -602,7 +602,7 @@ async def music_cplay_callback(update: Update, context: ContextTypes.DEFAULT_TYP
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="ai_handler"),
+                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="git_source"),
                     ],
                 ],
             ),
@@ -624,7 +624,7 @@ async def music_gban_callback(update: Update, context: ContextTypes.DEFAULT_TYPE
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="ai_handler"),
+                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="git_source"),
                     ],
                 ],
             ),
@@ -645,7 +645,7 @@ async def music_loop_callback(update: Update, context: ContextTypes.DEFAULT_TYPE
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="ai_handler"),
+                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="git_source"),
                     ],
                 ],
             ),
@@ -667,7 +667,7 @@ async def music_maintenance_callback(update: Update, context: ContextTypes.DEFAU
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="ai_handler"),
+                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="git_source"),
                     ],
                 ],
             ),
@@ -691,7 +691,7 @@ async def music_ping_callback(update: Update, context: ContextTypes.DEFAULT_TYPE
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="ai_handler"),
+                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="git_source"),
                     ],
                 ],
             ),
@@ -714,7 +714,7 @@ async def music_auth_callback(update: Update, context: ContextTypes.DEFAULT_TYPE
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="ai_handler"),
+                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="git_source"),
                     ],
                 ],
             ),
@@ -734,7 +734,7 @@ async def music_shuffle_callback(update: Update, context: ContextTypes.DEFAULT_T
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="ai_handler"),
+                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="git_source"),
                     ],
                 ],
             ),
@@ -754,7 +754,7 @@ async def music_seek_callback(update: Update, context: ContextTypes.DEFAULT_TYPE
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="ai_handler"),
+                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="git_source"),
                     ],
                 ],
             ),
@@ -772,7 +772,7 @@ async def music_song_callback(update: Update, context: ContextTypes.DEFAULT_TYPE
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="ai_handler"),
+                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="git_source"),
                     ],
                 ],
             ),
@@ -793,7 +793,7 @@ async def music_speed_callback(update: Update, context: ContextTypes.DEFAULT_TYP
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="ai_handler"),
+                        InlineKeyboardButton("⇦ 𝘽𝘼𝘾𝙆", callback_data="git_source"),
                     ],
                 ],
             ),
