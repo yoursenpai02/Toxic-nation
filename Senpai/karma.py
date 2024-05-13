@@ -18,14 +18,14 @@ START_IMG = [
 HEY_IMG = "https://graph.org/file/0127a4b43fd20f5b03eb6.jpg"
 
 ALIVE_ANIMATION = [
-    "https://telegra.ph//file/f9e2b9cdd9324fc39970a.mp4",
-    "https://telegra.ph//file/8d4d7d06efebe2f8becd0.mp4",
-    "https://telegra.ph//file/c4c2759c5fc04cefd207a.mp4",
-    "https://telegra.ph//file/b1fa6609b1c4807255927.mp4",
-    "https://telegra.ph//file/f3c7147da6511fbe27c25.mp4",
-    "https://telegra.ph//file/39071b73c02e3ff5945ca.mp4",
-    "https://telegra.ph//file/8d4d7d06efebe2f8becd0.mp4",
-    "https://telegra.ph//file/6efdd8e28756bc2f6e53e.mp4",
+    "https://telegra.ph/file/4e216093f28706310d3f5.mp4",
+    "https://telegra.ph/file/6537d7191a01b9a665c8e.mp4",
+    "https://telegra.ph/file/59b35f4240780cd0a6fcf.mp4",
+    "https://telegra.ph/file/4e216093f28706310d3f5.mp4",
+    "https://telegra.ph/file/6537d7191a01b9a665c8e.mp4",
+    "https://telegra.ph/file/59b35f4240780cd0a6fcf.mp4",
+    "https://telegra.ph/file/4e216093f28706310d3f5.mp4",
+    "https://telegra.ph/file/6537d7191a01b9a665c8e.mp4",
 ]
 
 FIRST_PART_TEXT = "✨ *ʜᴇʟʟᴏ* `{}` . . ."
