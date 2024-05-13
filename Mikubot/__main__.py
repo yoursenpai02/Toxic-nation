@@ -799,10 +799,6 @@ async def music_speed_callback(update: Update, context: ContextTypes.DEFAULT_TYP
             ),
         )
 
-async def repo(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    source_link = "hello"
-    message_text = f"*Here is the link for the public source repo*:\n\n{source_link}"
-
     await context.bot.send_message(
         chat_id=update.effective_chat.id,
         text=message_text,
@@ -1132,7 +1128,6 @@ def main():
 
     function(CommandHandler("settings", get_settings))
     function(CallbackQueryHandler(settings_button, pattern=r"stngs_"))
-    function(CommandHandler("repo", repo))
     function(CallbackQueryHandler(gitsource_callback, pattern=r"git_source"))
     function(CallbackQueryHandler(Miku_about_callback, pattern=r"Miku_"))
     function(CallbackQueryHandler(music_admin_callback, pattern=r"music_admin"))
